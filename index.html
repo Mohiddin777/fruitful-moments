@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fruitful Moments - Experience Freshness, One Bowl at a Time.</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff8f0;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #fffce1 60%, #ffe4e6 100%);
+      text-align: center;
+      padding: 2rem 1rem 1rem 1rem;
+    }
+    .logo {
+      font-size: 2.6rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: #e2725b;
+    }
+    .caption {
+      font-size: 1.35rem;
+      margin-top: 0.5rem;
+      color: #4c956c;
+      font-weight: 500;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: #fff;
+      padding: 1rem 0;
+      box-shadow: 0 3px 8px rgba(243, 168, 125, 0.05);
+    }
+    nav a {
+      text-decoration: none;
+      color: #e2725b;
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 0.7rem 1.3rem;
+      border-radius: 1rem;
+      transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    }
+    nav a:hover {
+      background: #fff6f3;
+      transform: scale(1.13);
+      box-shadow: 0 6px 18px rgba(243,168,125,0.11);
+    }
+    .main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem 1rem 1rem 1rem;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+    .gallery img {
+      border-radius: 1.1rem;
+      width: 310px;
+      height: 210px;
+      object-fit: cover;
+      box-shadow: 0 6px 22px rgba(243,168,125,0.11);
+      transition: transform 0.23s, box-shadow 0.23s;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.09);
+      box-shadow: 0 14px 32px rgba(247, 112, 59, 0.18);
+      outline: 2px solid #e2725b;
+    }
+    .quotes-section {
+      background: #fff6e6;
+      border-radius: 1rem;
+      margin-bottom: 2rem;
+      padding: 1.3rem 1.3rem;
+      box-shadow: 0 2px 8px rgba(243,168,125,0.07);
+    }
+    .fruit-benefits {
+      margin-top: 1.7rem;
+    }
+    .fruit {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.1rem;
+      flex-wrap: wrap;
+    }
+    .fruit img {
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 0.8rem;
+      margin-right: 1.2rem;
+      box-shadow: 0 2px 7px rgba(77, 166, 96, 0.12);
+      margin-bottom: 0.3rem;
+    }
+    .benefit {
+      font-size: 1.05rem;
+      color: #4c956c;
+      font-weight: 500;
+    }
+    .quote {
+      font-style: italic;
+      color: #e2725b;
+      margin-left: 2rem;
+      font-size: 0.97rem;
+    }
+    .cta-section {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      background: #fafff2;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      margin: 2rem 0 1rem 0;
+      box-shadow: 0 2px 10px rgba(114, 180, 90, 0.07);
+    }
+    .contacts {
+      font-size: 1.07rem;
+      color: #2c6f3e;
+    }
+    .cta-btn {
+      background: linear-gradient(90deg,#e2725b 40%, #9de59c 100%);
+      color: #fff;
+      padding: 1rem 2rem;
+      border-radius: 1.6rem;
+      border: none;
+      font-size: 1.18rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 6px 16px rgba(231,112,59,0.13);
+      margin-top: 1rem;
+      margin-left: auto;
+      transition: transform 0.21s, box-shadow 0.21s;
+    }
+    .cta-btn:hover {
+      transform: scale(1.07);
+      box-shadow: 0 12px 28px rgba(231,112,59,0.18);
+      background: linear-gradient(90deg,#9de59c 10%, #e2725b 100%);
+    }
+    @media (max-width: 700px) {
+      .gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+      .main {
+        padding: 1rem 0.5rem;
+      }
+      .cta-section {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.4rem 0.8rem;
+      }
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Fruitful Moments</div>
+    <div class="caption">Experience Freshness, One Bowl at a Time.</div>
+  </header>
+  <nav>
+    <a href="#gallery">Gallery</a>
+    <a href="#benefits">Fruit Benefits</a>
+    <a href="#choose">Order Now</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="main">
+    <section class="gallery" id="gallery">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Fruit Bowl">
+      <img src="https://images.unsplash.com/photo-1519864600265-abb244a30b43?auto=format&fit=crop&w=800&q=80" alt="Team enjoying fruit bowl">
+      <img src="https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=800&q=80" alt="Professional enjoying fruit">
+      <img src="https://images.unsplash.com/photo-1447078806655-40579c2520d6?auto=format&fit=crop&w=800&q=80" alt="Colorful fruit bowl">
+    </section>
+    <section class="quotes-section" id="benefits">
+      <h2 style="color:#e2725b;">Benefits of Fruits & Inspiring Quotes</h2>
+      <div class="fruit-benefits">
+        <div class="fruit">
+          <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80" alt="Berries">
+          <span class="benefit">Berries — Rich in antioxidants, boost memory & focus.</span>
+          <span class="quote">“A healthy outside starts from the inside.”</span>
+        </div>
+        <div class="fruit">
+          <img src="https://images.unsplash.com/photo-1508747703725-719777637510?auto=format&fit=crop&w=400&q=80" alt="Banana">
+          <span class="benefit">Banana — Great for energy, supports heart & muscles.</span>
+          <span class="quote">“Let food be thy medicine.”</span>
+        </div>
+        <div class="fruit">
+          <img src="https://images.unsplash.com/photo-1439122955806-6c6a0def994c?auto=format&fit=crop&w=400&q=80" alt="Apple">
+          <span class="benefit">Apple — Strengthens immunity, keeps digestion healthy.</span>
+          <span class="quote">“An apple a day keeps the doctor away.”</span>
+        </div>
+        <div class="fruit">
+          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Orange">
+          <span class="benefit">Orange — Vitamin C rich, boosts skin health & immunity.</span>
+          <span class="quote">“Health is the greatest wealth.”</span>
+        </div>
+        <div class="fruit">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80" alt="Kiwi">
+          <span class="benefit">Kiwi — Fights fatigue, excellent for digestion.</span>
+          <span class="quote">“Start your day with a bowl of sunshine.”</span>
+        </div>
+      </div>
+    </section>
+    <section class="cta-section" id="choose">
+      <div>
+        <div class="contacts" id="contact">
+          📧 Email: fruitfulmoments@fresh.com<br>
+          ☎ Call: +91 98765 43210<br>
+          ☎ WhatsApp: +91 99887 76654
+        </div>
+      </div>
+      <button class="cta-btn" onclick="window.location.href='fruitbowls.html'">Choose your Bowl</button>
+    </section>
+  </div>
+</body>
+</html>
